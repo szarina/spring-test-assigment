@@ -1,12 +1,12 @@
-package com.example.testassigment.dto;
+package com.example.simpleproject.dto;
 
-import javax.validation.constraints.NotBlank;
+
 
 public class SensorDTO {
-    @NotBlank
-    private String name;
 
-    // Getters and setters
+
+    String name;
+
     public String getName() {
         return name;
     }
@@ -15,4 +15,8 @@ public class SensorDTO {
         this.name = name;
     }
 
+    @Override
+    public String toString() {
+        return  " sensor:  " + name +"\n";
+    }
 }
